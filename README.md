@@ -15,10 +15,10 @@ ignored if only the required two-way comparison is being graded.
 |---|---|
 | `vit_original.py` | Original ViT — timm's built-in learned absolute positional embedding (paper Eq. 1) |
 | `vit_modified.py` | **Required modified variant** — positional embedding replaced with 2D Axial RoPE |
-| `vit_phasegrid.py` | *(Additional, not required)* — positional embedding replaced with a novel DFT-fingerprint → FiLM-on-V scheme |
+| `vit_phasegrid.py` | *(Additional, For experimention)* — positional embedding replaced with a novel DFT-fingerprint → FiLM-on-V scheme |
 | `train.py` | Shared training script; `--variant original\|modified\|phasegrid` selects the model, everything else is identical |
 | `compare_results.py` | Reads `results_*.json` outputs, prints the accuracy table, saves the combined loss plot (works with 2 or 3 variants) |
-| `make_figures.py` | Generates IEEE-quality figures for a report: loss curves, validation accuracy, and test-set prediction-confidence histogram (see "Generating report figures" below) |
+| `make_figures.py` | Generates figures for a report: loss curves, validation accuracy, and test-set prediction-confidence histogram (see "Generating report figures" below) |
 
 ## How to reproduce
 
